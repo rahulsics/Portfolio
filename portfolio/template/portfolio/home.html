@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rahul</title>
+</head>
+<body>
+<h1>This is my personal portfolio</h1>
+{% for project in projects%}
+<h2>{{project.title}}</h2>
+<br>
+<p>{{project.description}}</p>
+<br>
+<img src="{{project.image.url}}" height=100 width=100>
+{{items}}
+{%endfor%}
+</body>
+</html>
